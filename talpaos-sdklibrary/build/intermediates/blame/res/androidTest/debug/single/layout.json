@@ -1,0 +1,154 @@
+[
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_one_btn_with_divider.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_one_btn_with_divider.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_two_btn_with_divider.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_two_btn_with_divider.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_single_check_dialog.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_single_check_dialog.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_singlechoice_item.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_singlechoice_item.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_one_btn_with_divider.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_one_btn_with_divider.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_preference_widget_switch.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_preference_widget_switch.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_content_customeview.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_content_customeview.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_content_textview.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_content_textview.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_icon_singlechoice_item.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_icon_singlechoice_item.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_content_dialog.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_content_dialog.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_two_btn_with_divider.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_two_btn_with_divider.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_with_edit_bottom_dialog.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_with_edit_bottom_dialog.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_icon_singlechoice_item.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_icon_singlechoice_item.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_single_check_dialog.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_single_check_dialog.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_edit_customeview.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_edit_customeview.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_btn_container.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_btn_container.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_list_bottom_dialog.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_list_bottom_dialog.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_content_textview.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_content_textview.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_title_view.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_title_view.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_operation_item.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_operation_item.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_operation_item.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_operation_item.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_preference_widget_switch.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_preference_widget_switch.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_single_check_customeview.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_single_check_customeview.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_singlechoice_item.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_singlechoice_item.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_title_view.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_title_view.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_operation_item_content.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_operation_item_content.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_operation_item_content.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_operation_item_content.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_operation_window.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_operation_window.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_list_bottom_dialog.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_list_bottom_dialog.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_text_item.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_text_item.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_edit_customeview.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_edit_customeview.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_content_dialog.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_content_dialog.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_btn_container.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_btn_container.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_content_customeview.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_content_customeview.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_single_check_customeview.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_single_check_customeview.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_with_edit_bottom_dialog.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_with_edit_bottom_dialog.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_operation_window.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_operation_window.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\talpaossdk_dialog_text_item.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\talpaossdk_dialog_text_item.xml"
+    }
+]

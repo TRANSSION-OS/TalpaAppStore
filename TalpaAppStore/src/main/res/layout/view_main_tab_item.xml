@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+            <ImageView
+                android:id="@+id/icon_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="1"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="1"/>
+        </FrameLayout>
+
+        <tran.com.android.tapla.gamecenter.common.TextViewInMainTabView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_text_horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/homepage_main_tab_item_padding_top"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:textColor="@color/main_tab_text_color"-->
+        <!--android:alpha="0"-->
+        <!--android:textSize="@dimen/textsize_14" />-->
+
+</FrameLayout>

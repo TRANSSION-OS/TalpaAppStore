@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 2.3.3">
+
+    <issue
+        id="MissingSuperCall"
+        severity="Error"
+        message="Overriding method should call `super.onFinishInflate`"
+        category="Correctness"
+        priority="9"
+        summary="Missing Super Call"
+        explanation="Some methods, such as `View#onDetachedFromWindow`, require that you also call the super implementation as part of your method."
+        errorLine1="    protected void onFinishInflate() {"
+        errorLine2="                   ~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\btn\TalpaOssdkOneBtnWithDivider.java"
+            line="24"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        severity="Error"
+        message="Overriding method should call `super.onFinishInflate`"
+        category="Correctness"
+        priority="9"
+        summary="Missing Super Call"
+        explanation="Some methods, such as `View#onDetachedFromWindow`, require that you also call the super implementation as part of your method."
+        errorLine1="    protected void onFinishInflate() {"
+        errorLine2="                   ~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\btn\TalpaOssdkTwoBtnWithDivider.java"
+            line="25"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="ResourceType"
+        severity="Fatal"
+        message="Expected resource of type styleable"
+        category="Correctness"
+        priority="7"
+        summary="Wrong Resource Type"
+        explanation="Ensures that resource id&apos;s passed to APIs are of the right type; for example, calling `Resources.getColor(R.string.name)` is wrong."
+        errorLine1="        switchOff = b.getText(1);"
+        errorLine2="                              ~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\customeswitch\Switch.java"
+            line="321"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        severity="Warning"
+        message="This LinearLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        category="Correctness"
+        priority="7"
+        summary="ScrollView size validation"
+        explanation="ScrollView children must set their `layout_width` or `layout_height` attributes to `wrap_content` rather than `fill_parent` or `match_parent` in the scrolling dimension"
+        errorLine1="            android:layout_height=&quot;match_parent&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\layout\talpaossdk_dialog_content_customeview.xml"
+            line="15"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        severity="Warning"
+        message="This LinearLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        category="Correctness"
+        priority="7"
+        summary="ScrollView size validation"
+        explanation="ScrollView children must set their `layout_width` or `layout_height` attributes to `wrap_content` rather than `fill_parent` or `match_parent` in the scrolling dimension"
+        errorLine1="            android:layout_height=&quot;match_parent&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\layout\talpaossdk_dialog_single_check_customeview.xml"
+            line="15"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="Range"
+        severity="Error"
+        message="Value must be ≤ 1073741823 (was 2147483647)"
+        category="Correctness"
+        priority="6"
+        summary="Outside Range"
+        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
+        errorLine1="            heightMeasureSpec = MeasureSpec.makeMeasureSpec(height,EXACTLY);"
+        errorLine2="                                                            ~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\dialog\view\LimitedWHLinearLayout.java"
+            line="57"
+            column="61"/>
+    </issue>
+
+    <issue
+        id="Range"
+        severity="Error"
+        message="Value must be ≤ 1073741823 (was 2147483647)"
+        category="Correctness"
+        priority="6"
+        summary="Outside Range"
+        explanation="Some parameters are required to in a particular numerical range; this check makes sure that arguments passed fall within the range. For arrays, Strings and collections this refers to the size or length."
+        errorLine1="            widthMeasureSpec = MeasureSpec.makeMeasureSpec(width,EXACTLY);"
+        errorLine2="                                                           ~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\dialog\view\LimitedWHLinearLayout.java"
+            line="63"
+            column="60"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `end` is only used in API level 23 and higher (current min is 21)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="            &lt;item android:drawable=&quot;@drawable/talpaossdk_switch_thumb_off&quot; android:end=&quot;-8dp&quot; android:start=&quot;-8dp&quot;/>"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\drawable\talpaossdk_switch_thumb.xml"
+            line="5"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `start` is only used in API level 23 and higher (current min is 21)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="            &lt;item android:drawable=&quot;@drawable/talpaossdk_switch_thumb_off&quot; android:end=&quot;-8dp&quot; android:start=&quot;-8dp&quot;/>"
+        errorLine2="                                                                                              ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\drawable\talpaossdk_switch_thumb.xml"
+            line="5"
+            column="95"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `end` is only used in API level 23 and higher (current min is 21)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="            &lt;item android:drawable=&quot;@drawable/talpaossdk_switch_thumb_on&quot; android:end=&quot;-8dp&quot; android:start=&quot;-8dp&quot;/>"
+        errorLine2="                                                                          ~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\drawable\talpaossdk_switch_thumb.xml"
+            line="10"
+            column="75"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `start` is only used in API level 23 and higher (current min is 21)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="            &lt;item android:drawable=&quot;@drawable/talpaossdk_switch_thumb_on&quot; android:end=&quot;-8dp&quot; android:start=&quot;-8dp&quot;/>"
+        errorLine2="                                                                                             ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\drawable\talpaossdk_switch_thumb.xml"
+            line="10"
+            column="94"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `end` is only used in API level 23 and higher (current min is 21)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="            &lt;item android:drawable=&quot;@drawable/talpaossdk_switch_thumb_off_disable&quot; android:end=&quot;-8dp&quot; android:start=&quot;-8dp&quot;/>"
+        errorLine2="                                                                                   ~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\drawable\talpaossdk_switch_thumb.xml"
+            line="15"
+            column="84"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `start` is only used in API level 23 and higher (current min is 21)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="            &lt;item android:drawable=&quot;@drawable/talpaossdk_switch_thumb_off_disable&quot; android:end=&quot;-8dp&quot; android:start=&quot;-8dp&quot;/>"
+        errorLine2="                                                                                                      ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\drawable\talpaossdk_switch_thumb.xml"
+            line="15"
+            column="103"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `end` is only used in API level 23 and higher (current min is 21)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="            &lt;item android:drawable=&quot;@drawable/talpaossdk_switch_thumb_on_disable&quot; android:end=&quot;-8dp&quot; android:start=&quot;-8dp&quot;/>"
+        errorLine2="                                                                                  ~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\drawable\talpaossdk_switch_thumb.xml"
+            line="20"
+            column="83"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `start` is only used in API level 23 and higher (current min is 21)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="            &lt;item android:drawable=&quot;@drawable/talpaossdk_switch_thumb_on_disable&quot; android:end=&quot;-8dp&quot; android:start=&quot;-8dp&quot;/>"
+        errorLine2="                                                                                                     ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\drawable\talpaossdk_switch_thumb.xml"
+            line="20"
+            column="102"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `end` is only used in API level 23 and higher (current min is 21)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="    &lt;item android:drawable=&quot;@drawable/talpaossdk_switch_thumb_off&quot; android:end=&quot;-8dp&quot; android:start=&quot;-8dp&quot;/>"
+        errorLine2="                                                                   ~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\drawable\talpaossdk_switch_thumb.xml"
+            line="23"
+            column="68"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `start` is only used in API level 23 and higher (current min is 21)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="    &lt;item android:drawable=&quot;@drawable/talpaossdk_switch_thumb_off&quot; android:end=&quot;-8dp&quot; android:start=&quot;-8dp&quot;/>"
+        errorLine2="                                                                                      ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\drawable\talpaossdk_switch_thumb.xml"
+            line="23"
+            column="87"/>
+    </issue>
+
+    <issue
+        id="InflateParams"
+        severity="Warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)"
+        category="Correctness"
+        priority="5"
+        summary="Layout Inflation without a Parent"
+        explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
+        url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
+        errorLine1="        View view = LayoutInflater.from(context).inflate(R.layout.talpaossdk_operation_window, null);"
+        errorLine2="                                                                                               ~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\operation\TalpaOssdkOperationWindowHelper.java"
+            line="24"
+            column="96"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="The targetSdkVersion (26) should not be higher than the compileSdkVersion (24)"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    compileSdkVersion 24"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\build.gradle"
+            line="5"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="Old buildToolsVersion 25.0.0; recommended version is 25.0.1 or later"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    buildToolsVersion &apos;25.0.0&apos;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\build.gradle"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw operations: Use `Canvas.getClipBounds(Rect)` instead of `Canvas.getClipBounds()` which allocates a temporary `Rect`"
+        category="Performance"
+        priority="9"
+        summary="Memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.&#xA;&#xA;The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.&#xA;&#xA;Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="                    Rect rect = new Rect(canvas.getClipBounds());"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\customeswitch\Switch.java"
+            line="1525"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        category="Performance"
+        priority="9"
+        summary="Memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.&#xA;&#xA;The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.&#xA;&#xA;Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="                    Rect rect = new Rect(canvas.getClipBounds());"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\customeswitch\Switch.java"
+            line="1525"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="Unnecessary; SDK_INT is always >= 21"
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for."
+        errorLine1="        if (useAnim &amp;&amp; Build.VERSION.SDK_INT >= 19 &amp;&amp; isAttachedToWindow() &amp;&amp; isLaidOut()) {"
+        errorLine2="                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\customeswitch\Switch.java"
+            line="1324"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="Unnecessary; SDK_INT is always >= 21"
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for."
+        errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\customeswitch\Switch.java"
+            line="1629"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="Unnecessary; SDK_INT is always >= 21"
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for."
+        errorLine1="                if (Build.VERSION.SDK_INT >= 19) {"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\customeswitch\SwitchPreference.java"
+            line="122"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="Unnecessary; SDK_INT is always >= 21"
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for."
+        errorLine1="            mCanRecycleLayoutField.set(this, Build.VERSION.SDK_INT >= 19);"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\customeswitch\SwitchPreference.java"
+            line="129"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.talpaossdk_dialog_subtitle_textcolor` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;color name=&quot;talpaossdk_dialog_subtitle_textcolor&quot;>#8d8d8d&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\values\colors.xml"
+            line="10"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.talpaossdk_floatbtn_shadow_red` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;color name=&quot;talpaossdk_floatbtn_shadow_red&quot;>#F5DCD5&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\values\colors.xml"
+            line="28"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.dimen.talpaossdk_operation_item_margin_tb` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;dimen name=&quot;talpaossdk_operation_item_margin_tb&quot;>8dip&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\values\dimens.xml"
+            line="39"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.dimen.talpaossdk_shadow_offsetY` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;dimen name=&quot;talpaossdk_shadow_offsetY&quot;>5dip&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\values\dimens.xml"
+            line="46"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.dimen.talpaossdk_shadow_radius` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;dimen name=&quot;talpaossdk_shadow_radius&quot;>8dip&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\values\dimens.xml"
+            line="47"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.app_name` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;app_name&quot;>talpaos-sdklibrary&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\values\strings.xml"
+            line="2"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="IconMissingDensityFolder"
+        severity="Warning"
+        message="Missing density variation folders in `src\main\res`: drawable-mdpi, drawable-hdpi, drawable-xxhdpi"
+        category="Usability:Icons"
+        priority="3"
+        summary="Missing density folder"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra-high, extra-extra-high). This lint check identifies folders which are missing, such as `drawable-hdpi`.&#xA;&#xA;Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        severity="Warning"
+        message="This text field does not specify an `inputType` or a `hint`"
+        category="Usability"
+        priority="5"
+        summary="Missing `inputType` or `hint`"
+        explanation="Providing an `inputType` attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). Similarly,a hint attribute displays a hint to the user for what is expected in the text field.&#xA;&#xA;The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.&#xA;&#xA;If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
+        errorLine1="    &lt;EditText"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\layout\talpaossdk_dialog_edit_customeview.xml"
+            line="21"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ViewConstructor"
+        severity="Warning"
+        message="Custom view `TalpaOssdkShadowBgView` is missing constructor used by tools: `(Context)` or `(Context,AttributeSet)` or `(Context,AttributeSet,int)`"
+        category="Usability"
+        priority="3"
+        summary="Missing View constructors for XML inflation"
+        explanation="Some layout tools (such as the Android layout editor) need to find a constructor with one of the following signatures:&#xA;* `View(Context context)`&#xA;* `View(Context context, AttributeSet attrs)`&#xA;* `View(Context context, AttributeSet attrs, int defStyle)`&#xA;&#xA;If your custom view needs to perform initialization which does not apply when used in a layout editor, you can surround the given code with a check to see if `View#isInEditMode()` is false, since that method will return `false` at runtime but true within a user interface editor."
+        errorLine1="public class TalpaOssdkShadowBgView extends View {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\java\com\transsion\ossdk\floatbtn\TalpaOssdkShadowBgView.java"
+            line="16"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="[Accessibility] Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="            &lt;ImageView android:id=&quot;@+id/talpaossdk_dialog_left_iv&quot;"
+        errorLine2="            ^"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\layout\talpaossdk_dialog_content_customeview.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="[Accessibility] Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView android:id=&quot;@+id/talpaossdk_iv&quot;"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\layout\talpaossdk_dialog_icon_singlechoice_item.xml"
+            line="23"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="[Accessibility] Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageView android:id=&quot;@+id/talpaossdk_item_iv&quot;"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\layout\talpaossdk_operation_item_content.xml"
+            line="14"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        severity="Warning"
+        message="No label views point to this text field with an `android:labelFor=&quot;@+id/talpaossdk_dialog_et&quot;` attribute"
+        category="Accessibility"
+        priority="2"
+        summary="Missing `labelFor` attribute"
+        explanation="Text fields should be labelled with a `labelFor` attribute, provided your `minSdkVersion` is at least 17.&#xA;&#xA;If your view is labeled but by a label in a different layout which includes this one, just suppress this warning from lint."
+        errorLine1="    &lt;EditText"
+        errorLine2="    ^">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\layout\talpaossdk_dialog_edit_customeview.xml"
+            line="21"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        severity="Warning"
+        message="When you define `paddingLeft` you should probably also define `paddingRight` for right-to-left symmetry"
+        category="Internationalization:Bidirectional Text"
+        priority="6"
+        summary="Padding and margin symmetry"
+        explanation="If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry."
+        errorLine1="        android:paddingLeft=&quot;@dimen/talpaossdk_dialog_et_edittext_paddingLeft&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\layout\talpaossdk_dialog_edit_customeview.xml"
+            line="29"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:paddingLeft` with `android:paddingStart=&quot;@dimen/talpaossdk_dialog_et_edittext_paddingLeft&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="        android:paddingLeft=&quot;@dimen/talpaossdk_dialog_et_edittext_paddingLeft&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\layout\talpaossdk_dialog_edit_customeview.xml"
+            line="29"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Redundant attribute `layout_marginRight`; already defining `layout_marginEnd` with `targetSdkVersion` 26"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="    android:layout_marginRight=&quot;8dip&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\res\layout\talpaossdk_preference_widget_switch.xml"
+            line="25"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="RtlEnabled"
+        severity="Warning"
+        message="The project references RTL attributes, but does not explicitly enable or disable RTL support with `android:supportsRtl` in the manifest"
+        category="Internationalization:Bidirectional Text"
+        priority="3"
+        summary="Using RTL attributes without enabling RTL support"
+        explanation="To enable right-to-left support, when running on API 17 and higher, you must set the `android:supportsRtl` attribute in the manifest `&lt;application>` element.&#xA;&#xA;If you have started adding RTL attributes, but have not yet finished the migration, you can set the attribute to false to satisfy this lint check.">
+        <location
+            file="E:\CHB_WorkSpace\TalpaAppStore\code\talpaos-sdklibrary\src\main\AndroidManifest.xml"/>
+    </issue>
+
+</issues>

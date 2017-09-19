@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\talpaossdk_operation_item_textcolor_selector.xml",
+        "source": "E:\\CHB_WorkSpace\\Gerrit\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\color\\talpaossdk_operation_item_textcolor_selector.xml"
+    },
+    {
+        "merged": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\talpaossdk_operation_item_textcolor_selector.xml",
+        "source": "E:\\CHB_WorkSpace\\TalpaAppStore\\code\\talpaos-sdklibrary\\build\\intermediates\\bundles\\debug\\res\\color\\talpaossdk_operation_item_textcolor_selector.xml"
+    }
+]

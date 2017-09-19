@@ -1,0 +1,5 @@
+include ':update'
+include ':gamecenterlib'
+include ':TalpaAppStore'
+include ':app_core'
+include ':talpaos-sdklibrary'
