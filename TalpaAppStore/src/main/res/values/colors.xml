@@ -340,7 +340,7 @@
     <color name="progressGreen_dark">#4ee2a6</color>
 
     <!-- 下载管理 -->
-    <color name="down_man_nodata_text">#9e9e9e</color>
+    <color name="down_man_nodata_text">#cacaca</color>
     
     <!-- 下载管理列表项 -->
     <color name="down_man_item_speed_text">#0ec16f</color>

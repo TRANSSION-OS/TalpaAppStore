@@ -240,7 +240,7 @@ public class DownloadManagerActivity extends BaseActivity {
 		mActionBar = getAuroraActionBar();
 		mActionBar.setTitle(R.string.download_manager_pref);
 		mActionBar.setBackground(getResources().getDrawable(
-				R.drawable.aurora_action_bar_top_bg_green));
+				R.drawable.actionbar_));
 		setAuroraMenuCallBack(new OnAuroraMenuItemClickListener() {
 			@Override
 			public void auroraMenuItemClick(int paramInt) {

@@ -71,7 +71,7 @@ public class MarketSettingsPreferenceActivity extends BasePreferenceActivity {
 		mActionBar = getAuroraActionBar();
 		mActionBar.setTitle(R.string.settings_pref);
         mActionBar.setBackground(getResources().getDrawable(
-                R.drawable.aurora_action_bar_top_bg_green));
+                R.drawable.actionbar_));
 		// addAuroraActionBarItem(AuroraActionBarItem.Type.Add,
 		// AURORA_NEW_MARKET);
 	}

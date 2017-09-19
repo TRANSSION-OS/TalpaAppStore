@@ -15,6 +15,7 @@
     <dimen name="textsize_15">15sp</dimen>
     <dimen name="textsize_16">16sp</dimen>
     <dimen name="textsize_17">17sp</dimen>
+    <dimen name="textsize_empty_view_14">14sp</dimen>
     <dimen name="textsize_18">18sp</dimen>
     <dimen name="textsize_20">20sp</dimen>
     <dimen name="textsize_22">22sp</dimen>
@@ -304,9 +305,9 @@
     <dimen name="progressBtnDotRadius">0.8dp</dimen>
 
     <!-- 下载管理 -->
-    <dimen name="down_man_nodata_uxiaobei_margintop">130dp</dimen>
-    <dimen name="down_man_nodata_text_margintop">22dp</dimen>
-    <dimen name="down_man_nodata_button_margintop">70dp</dimen>
+    <dimen name="down_man_nodata_uxiaobei_margintop">138dp</dimen>
+    <dimen name="down_man_nodata_text_margintop">6dp</dimen>
+    <dimen name="down_man_nodata_button_margintop">12dp</dimen>
 
     <!-- 下载管理item -->
     <dimen name="down_man_item_height">67dp</dimen>

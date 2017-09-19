@@ -661,7 +661,9 @@ public class AppDownloadDao {
                             AppDownloadHelper.FILE_DIR,
                             AppDownloadHelper.FILE_NAME,
                             AppDownloadHelper.FINISH_TIME,
-                            AppDownloadHelper.ID},
+                            //chb remove id for crash
+                            // AppDownloadHelper.ID
+                    },
                     AppDownloadHelper.STATUS + ">=?",
                     new String[]{FileDownloader.STATUS_INSTALL_WAIT + ""}, null,
                     null, null, (pageNum * rowCount) - rowCount + ", " + rowCount);

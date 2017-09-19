@@ -85,9 +85,13 @@ public class MarketUpdateIgnoredActivity extends BaseActivity implements
 		super.onCreate(savedInstanceState);
 		setAuroraContentView(R.layout.activity_app_update_page);
 
+		//初始状态栏
 		initActionBar();
+
+		//初始化主布局
 		initViews();
 
+		//
 		setListener();
 		
 		initLoadingPage();
@@ -109,7 +113,7 @@ public class MarketUpdateIgnoredActivity extends BaseActivity implements
 		mActionBar = getAuroraActionBar();
 		mActionBar.setTitle(R.string.update_apps_ignored);
 	    mActionBar.setBackground(getResources().getDrawable(
-	                R.drawable.aurora_action_bar_top_bg_green));
+	                R.drawable.actionbar_));
         // addAuroraActionBarItem(AuroraActionBarItem.Type.Add,
         // AURORA_NEW_MARKET);
 	}
@@ -150,6 +154,7 @@ public class MarketUpdateIgnoredActivity extends BaseActivity implements
 	    mEmptyLayout = (LinearLayout) findViewById(R.id.upempty_layout);
 	    mEmptyView = (TextView) findViewById(R.id.upempty_view);
 	    mEmptyImg = (ImageView) findViewById(R.id.upempty_bg);
+		//upempty_btn 无忽略更新应用
 		mEmptyBtn = (Button) findViewById(R.id.upempty_btn);
 
 		mIgnoreAppAdapter = new IgnoreAppAdapter(this);

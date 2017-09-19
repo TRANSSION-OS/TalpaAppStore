@@ -13,20 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" 
         android:background="@color/alpha_10_white"
-        android:visibility="gone"
-        />
-    
-    <LinearLayout 
-    android:id="@+id/pop_layout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@android:color/white"
-    android:orientation="vertical" >
+        android:visibility="gone" />
 
-   <ListView  android:id="@+id/pop_query_list"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       />
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/pop_query_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
 </LinearLayout>
     
@@ -42,18 +41,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/down_man_nodata_uxiaobei_margintop"
-            android:src="@drawable/icon_uxiaobei" />
-        
+            android:src="@drawable/nosearchresult" />
+
         <TextView
             android:id="@+id/empty_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/page_empty_search"
-            android:textSize="@dimen/textsize_16"
             android:layout_marginTop="@dimen/down_man_nodata_text_margintop"
+            android:text="@string/page_empty_search"
             android:textColor="@color/down_man_nodata_text"
-            />
+            android:textSize="@dimen/textsize_empty_view_14" />
     </LinearLayout>
    
     <include layout="@layout/view_page_loading" />

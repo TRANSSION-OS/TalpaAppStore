@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import tran.com.android.gc.lib.app.AuroraAlertDialog;
@@ -19,11 +20,17 @@ import tran.com.android.tapla.gamecenter.market.activity.BasePreferenceActivity;
 import tran.com.android.tapla.gamecenter.market.activity.module.MarketUpdateIgnoredActivity;
 import tran.com.android.tapla.gamecenter.market.service.AutoUpdateService;
 
+/**
+ * 管理——> 设置——> 更新设置界面
+ * */
 public class UpdateSettingsPreferenceActivity extends BasePreferenceActivity
 		implements OnPreferenceChangeListener {
 
+	//wifi下自动更新
 	public final static String WIFI_AUTO_UPGRADE_KEY = "wifi_auto_upgrade_key";
+	//软件更新提醒
 	public final static String SOFTWARE_AUTO_UPDATE_TIP_KEY = "software_auto_update_tip_key";
+	//已忽略更新应用
 	public final static String APPS_UPDATE_IGNORED_KEY = "apps_update_ignored_key";
 
 	private AuroraSwitchPreference mWifiAutoUpgradePref;
@@ -36,6 +43,7 @@ public class UpdateSettingsPreferenceActivity extends BasePreferenceActivity
 	protected void onCreate(Bundle arg0) {
 		// TODO Auto-generated method stub
 		super.onCreate(arg0);
+		//加载布局
 		addPreferencesFromResource(R.xml.update_settings_prefs);
 
 		initActionBar();
@@ -46,7 +54,7 @@ public class UpdateSettingsPreferenceActivity extends BasePreferenceActivity
 		mActionBar = getAuroraActionBar();
 		mActionBar.setTitle(R.string.app_update_settings);
 		mActionBar.setBackground(getResources().getDrawable(
-				R.drawable.aurora_action_bar_top_bg_green));
+				R.drawable.actionbar_));
 	}
 
 	private void initViews() {
@@ -55,6 +63,7 @@ public class UpdateSettingsPreferenceActivity extends BasePreferenceActivity
 		mSoftwareAutoUpdateTipPref = (AuroraSwitchPreference) findPreference(SOFTWARE_AUTO_UPDATE_TIP_KEY);
 		mAppsUpdateIgnoredPref = (AuroraPreference) findPreference(APPS_UPDATE_IGNORED_KEY);
 
+		//WiFi自动升级下载监听
 		mWifiAutoUpgradePref.setOnPreferenceChangeListener(this);
 	}
 
@@ -64,11 +73,12 @@ public class UpdateSettingsPreferenceActivity extends BasePreferenceActivity
 			AuroraPreferenceScreen preferenceScreen, AuroraPreference preference) {
 		// TODO Auto-generated method stub
 		if (WIFI_AUTO_UPGRADE_KEY.equals(preference.getKey())) {
-
+			//do something
 		} else if (SOFTWARE_AUTO_UPDATE_TIP_KEY.equals(preference.getKey())) {
-
+			//do something
 		} else if (APPS_UPDATE_IGNORED_KEY.equals(preference.getKey())) {
 			Intent lInt = new Intent(this, MarketUpdateIgnoredActivity.class);
+			//跳转到 已经忽略软件列表
 			startActivity(lInt);
 		}
 

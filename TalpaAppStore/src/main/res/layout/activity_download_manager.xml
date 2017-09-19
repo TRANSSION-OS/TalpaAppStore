@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/down_man_nodata_uxiaobei_margintop"
-            android:src="@drawable/icon_uxiaobei" />
+            android:src="@drawable/nodownloaddata" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,14 +27,13 @@
             android:layout_marginTop="@dimen/down_man_nodata_text_margintop"
             android:text="@string/downloadman_nodata"
             android:textColor="@color/down_man_nodata_text"
-            android:textSize="@dimen/textsize_16" />
+            android:textSize="@dimen/textsize_empty_view_14" />
 
         <Button
             android:id="@+id/btn_goto"
             style="@style/generalButton"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/common_btn_height"
             android:layout_marginTop="@dimen/down_man_nodata_button_margintop"
+            android:background="@drawable/button_nodata_selector"
             android:gravity="center"
             android:text="@string/downloadman_go_shopping" />
     </LinearLayout>

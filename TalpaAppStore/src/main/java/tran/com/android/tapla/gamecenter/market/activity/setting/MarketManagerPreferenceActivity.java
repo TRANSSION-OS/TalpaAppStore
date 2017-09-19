@@ -168,7 +168,7 @@ public class MarketManagerPreferenceActivity extends BasePreferenceActivity
 		mActionBar = getAuroraActionBar();
 		mActionBar.setTitle(R.string.market_manager_page);
 		mActionBar.setBackground(getResources().getDrawable(
-				R.drawable.aurora_action_bar_top_bg_green));
+                R.drawable.actionbar_));
 		// addAuroraActionBarItem(AuroraActionBarItem.Type.Add,
 		// AURORA_NEW_MARKET);
 		mActionBar

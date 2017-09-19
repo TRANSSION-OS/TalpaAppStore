@@ -209,7 +209,7 @@ public class MarketUpdateActivity extends BaseActivity implements
 		mActionBar = getAuroraActionBar();
 		mActionBar.setTitle(R.string.app_update_page);
 		mActionBar.setBackground(getResources().getDrawable(
-				R.drawable.aurora_action_bar_top_bg_green));
+				R.drawable.actionbar_));
 		mActionBar.addItem(R.layout.actionbar_download_num, AURORA_DOWNLOAD);
 		mDownloadBtn = (FrameLayout) mActionBar
 				.findViewById(R.id.download_layout);

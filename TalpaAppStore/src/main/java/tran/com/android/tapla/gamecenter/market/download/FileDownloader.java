@@ -102,6 +102,8 @@ public class FileDownloader implements Runnable {
 		this.downloadData = downloadData;
 		this.listener = listener;
 		downloadUrl = downloadData.getApkDownloadPath();
+
+		Log.d("chehongbin","download url: "+downloadUrl);
 		String down_type= "";
 		if (type == TYPE_NORMAL)
 		{
