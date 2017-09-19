@@ -788,8 +788,14 @@ public class AuroraCustomActionBar extends AuroraAbsActionBar implements OnClick
     private void changeActionBarTitleColor(float progress){
 
         if(progress == 1){
+            Drawable arrow = getResources().getDrawable(R.drawable.vector_drawable_search_icon);
+            arrow.setAutoMirrored(true);
+            mBottomSearchShowButton.setImageDrawable(arrow);
             mTitleView.setTextColor(Color.BLACK);
         }else{
+            Drawable arrow = getResources().getDrawable(R.drawable.vector_drawable_search_white_icon);
+            arrow.setAutoMirrored(true);
+            mBottomSearchShowButton.setImageDrawable(arrow);
             mTitleView.setTextColor(Color.WHITE);
         }
     }

@@ -176,6 +176,7 @@
     <dimen name="page_loading_padding_left_right">17dp</dimen>
     <dimen name="tag_viewpage_margin_top">-0.1dp</dimen>
     <dimen name="app_icon_displayer">12dp</dimen>
+    <dimen name="banner_icon_displayer">10dp</dimen>
     <dimen name="app_icon_displayer_rounded">8dp</dimen>
     <!-- 首页 -->
     <dimen name="homepage_header_height">185dp</dimen>

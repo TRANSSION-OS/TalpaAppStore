@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/ll_nodata"
@@ -13,7 +13,7 @@
         android:orientation="vertical"
         android:paddingLeft="@dimen/page_loading_padding_left_right"
         android:paddingRight="@dimen/page_loading_padding_left_right"
-        android:visibility="gone" >
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="wrap_content"

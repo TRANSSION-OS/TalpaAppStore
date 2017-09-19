@@ -63,7 +63,7 @@ public class AppAdapter extends BaseAdapter {
                 .showImageOnLoading(R.drawable.default_icon)
                 .showImageForEmptyUri(R.drawable.default_icon)
                 .showImageOnFail(R.drawable.default_icon)
-                .displayer(new RoundedBitmapDisplayer(context.getResources().getDimensionPixelOffset(R.dimen.app_icon_displayer)))
+                .displayer(new RoundedBitmapDisplayer(context.getResources().getDimensionPixelOffset(R.dimen.banner_icon_displayer)))
                 .cacheInMemory(true).cacheOnDisk(true).build();
 
         progressBtnUtil = new ProgressBtnUtil();
@@ -138,6 +138,9 @@ public class AppAdapter extends BaseAdapter {
                 holder.tv_download_count = (TextView) convertView
                         .findViewById(R.id.tv_download_count);
 
+                holder.tv_download_size = (TextView) convertView
+                        .findViewById(R.id.tv_download_size);
+
                 holder.progressBtn = (ProgressBtn) convertView
                         .findViewById(R.id.progressBtn);
                 convertView.setTag(holder);
@@ -187,6 +190,7 @@ public class AppAdapter extends BaseAdapter {
         TextView tv_appname;
         RatingBar rb_score;
         TextView tv_download_count;
+        TextView tv_download_size;
         RoundProgressView round_progress_view;
         ProgressBtn progressBtn;
     }
@@ -253,9 +257,9 @@ public class AppAdapter extends BaseAdapter {
         //holder.iv_icon.setTag(listitem.getIcons().getPx256());
 
         holder.tv_appname.setText(listitem.getTitle());
-        holder.tv_download_count.setText(listitem.getDownloadCountStr()
-                + inflater.getContext()
-                .getString(R.string.app_adapter_down_end) + "    " + listitem.getAppSizeStr());
+        holder.tv_download_count.setText(listitem.getDownloadCountStr());
+
+        holder.tv_download_size.setText(listitem.getAppSizeStr());
 
         holder.rb_score.setRating(listitem.getLikesRate());
 

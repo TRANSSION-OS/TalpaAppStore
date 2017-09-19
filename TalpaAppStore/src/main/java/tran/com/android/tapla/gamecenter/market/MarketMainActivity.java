@@ -167,6 +167,8 @@ public class MarketMainActivity extends BaseActivity implements
 
 	private FrameLayout frameLayout;
 	private View view_header;
+
+	private ImageView mActionbarMainManager;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// this.setTheme(R.style.Theme_Aurora_Dark_Transparent);
@@ -766,11 +768,13 @@ public class MarketMainActivity extends BaseActivity implements
 			mCustomActionBar.findViewById(R.id.aurora_custom_action_bar_search_view_icon)
 				.setBackgroundResource(R.drawable.aurora_actionbar_search_selector);
 			ImageButton searchBtn = (ImageButton)mCustomActionBar.findViewById(R.id.aurora_custom_action_bar_search_view_icon);
-			searchBtn.setImageResource(R.drawable.btn_query_right_selector);
+			searchBtn.setImageResource(R.drawable.vector_drawable_search_white_icon);
 			/*mCustomActionBar.setDefaultOptionItemDrawable(getResources()
 					.getDrawable(R.drawable.btn_main_right_selector));*/
 			mCustomActionBar.addItemView(R.layout.actionbar_main_right);
 			main_update = (ImageView) mCustomActionBar.findViewById(R.id.actionbar_main_update);
+
+			mActionbarMainManager = (ImageView) mCustomActionBar.findViewById(R.id.actionbar_main_manager);
 			View view = mCustomActionBar.findViewById(R.id.download_layout);
 			view.setOnClickListener(new OnClickListener() {
 				
@@ -1128,6 +1132,7 @@ public class MarketMainActivity extends BaseActivity implements
 				headerAd.setProgress(mPlaceHolderViewHeight);
 				frameMainTabView.setProgress(progress, mPlaceHolderViewHeight);
 			//	headerAd.setTransY(scrollY);
+				changeActionBarMainManager();
 			}
 			return;
 		}
@@ -1144,8 +1149,21 @@ public class MarketMainActivity extends BaseActivity implements
 				mCustomActionBar.playSearchPanelAnimation(progress, scrollY);
 				headerAd.setProgress(scrollY);
 				frameMainTabView.setProgress(progress, scrollY);
-
+				changeActionBarMainManager();
 			}
+		}
+
+	}
+
+	public void changeActionBarMainManager(){
+		if(progress == 1){
+			Drawable arrow = getResources().getDrawable(R.drawable.vector_drawable_manager_setting_btn);
+			arrow.setAutoMirrored(true);
+			mActionbarMainManager.setImageDrawable(arrow);
+		}else{
+			Drawable arrow = getResources().getDrawable(R.drawable.vector_drawable_manager_setting_white_btn);
+			arrow.setAutoMirrored(true);
+			mActionbarMainManager.setImageDrawable(arrow);
 		}
 	}
 

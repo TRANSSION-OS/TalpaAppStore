@@ -356,10 +356,10 @@ public class FrameBannerView extends FrameLayout {
 			this.views = views;
 
 			optionsImage = new DisplayImageOptions.Builder()
-					.showImageOnLoading(R.drawable.banner_loading_default)
-					.showImageForEmptyUri(R.drawable.banner_loading_default)
-					.showImageOnFail(R.drawable.banner_loading_default)
-					.displayer(new RoundedBitmapDisplayer(getResources().getDimensionPixelOffset(R.dimen.app_icon_displayer)))
+					.showImageOnLoading(R.drawable.banner_default_icon)
+					.showImageForEmptyUri(R.drawable.banner_default_icon)
+					.showImageOnFail(R.drawable.banner_default_icon)
+					.displayer(new RoundedBitmapDisplayer(getResources().getDimensionPixelOffset(R.dimen.banner_icon_displayer)))
 					.cacheInMemory(true).cacheOnDisk(true).build();
 		}
 

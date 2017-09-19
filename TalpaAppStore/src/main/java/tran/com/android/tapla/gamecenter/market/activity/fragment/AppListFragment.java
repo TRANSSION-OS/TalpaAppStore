@@ -291,10 +291,6 @@ public class AppListFragment extends Fragment implements INotifiableController {
 
 	private void initViews() {
 		View view = getView();
-		if (type == 4) {
-			mSpecialList = (FrameLayout) view.findViewById(R.id.special_list);
-			mSpecialList.setVisibility(View.VISIBLE);
-		}
 		mListView = (AuroraListView) view.findViewById(R.id.lv_app);
 		mListView.setSelector(R.drawable.list_item_selector);
 		loadMoreView = (LinearLayout) m_activity.getLayoutInflater().inflate(
@@ -308,7 +304,13 @@ public class AppListFragment extends Fragment implements INotifiableController {
 
 		mListView.addFooterView(loadMoreView);
 
-
+		if (type == 4) {
+			mHeaderView = m_activity.getLayoutInflater().inflate(R.layout.special_page_header, mListView, false);
+			mListView.addHeaderView(mHeaderView);
+			mSpecial_icon = (ImageView)mHeaderView.findViewById(R.id.special_icon);
+			mSpecialDescribe = (TextView) mHeaderView.findViewById(R.id.special_describe);
+			mSpecialName = (TextView) mHeaderView.findViewById(R.id.special_name);
+		}
 		if (update_status == 0) {
 			setUpdateSign(0);
 		} else {
@@ -899,14 +901,12 @@ public class AppListFragment extends Fragment implements INotifiableController {
 		if(uri == null || "".equals(uri)){
 			return;
 		}
-		View view = getView();
-		mSpecial_icon = (ImageView)view.findViewById(R.id.special_icon);
-		mSpecialDescribe = (TextView) view.findViewById(R.id.special_describe);
-		mSpecialName = (TextView) view.findViewById(R.id.special_name);
-//		mSpecialName.setText(obj.getSpecialName());
-//		mSpecialDescribe.setText(obj.getDescription());
+
+		mSpecialName.setText(obj.getSpecialName());
+		mSpecialDescribe.setText(obj.getDescription());
+
 		Glide.with(m_activity).load(uri).into(mSpecial_icon);
-		Glide.with(m_activity).load(uri).placeholder(R.drawable.default_icon).into(mSpecial_icon);
-		Glide.with(m_activity).load(uri).error(R.drawable.default_icon).into(mSpecial_icon);
+		Glide.with(m_activity).load(uri).placeholder(R.drawable.banner_default).into(mSpecial_icon);
+		Glide.with(m_activity).load(uri).error(R.drawable.banner_default).into(mSpecial_icon);
 	}
 }
