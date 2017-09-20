@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "tran.com.android.taplagame"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 25
         multiDexEnabled true
     }

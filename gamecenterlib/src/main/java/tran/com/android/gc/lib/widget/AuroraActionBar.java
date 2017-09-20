@@ -118,6 +118,7 @@ public class AuroraActionBar extends LinearLayout {
 		return mTitleView;
 	}
 
+
 	/*
 	 * Normal：textview，homebutton有效 Dashboard: textview，homebutton无效
 	 * Empty:只有textview，无homebutton
@@ -427,7 +428,7 @@ public class AuroraActionBar extends LinearLayout {
 //				R.string.aurora_go_home));
 	}
 
-	public View getHomeButton() {
+	public ImageButton getHomeButton() {
 		return mHomeButton;
 	}
 
@@ -468,7 +469,6 @@ public class AuroraActionBar extends LinearLayout {
 		return 	auroraTitleFace;
 	}
 	//flash add end
-	
 	
 	public void setTitle(CharSequence title) {
 	    int maxTitleLength = (int)getResources().getDimension(R.dimen.aurora_action_bar_title_maxwidth);

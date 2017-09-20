@@ -29,16 +29,16 @@ public class AuroraMarketPreference extends AuroraPreference {
 	protected View onCreateView(ViewGroup pViewGroup) {
 		// TODO Auto-generated method stub
 		setWidgetLayoutResource(R.layout.market_manager_pref_layout);
-
 		view = super.onCreateView(pViewGroup);
 		TextView ut = (TextView) view.findViewById(R.id.message);
-
-		if (sum > 0) {
-			ut.setVisibility(View.VISIBLE);
-			ut.setText(String.valueOf(sum));
-		} else {
-			ut.setVisibility(View.GONE);
-			ut.setText(String.valueOf(0));
+		if(ut!=null){
+			if (sum > 0) {
+				ut.setVisibility(View.VISIBLE);
+				ut.setText(String.valueOf(sum));
+			} else {
+				ut.setVisibility(View.GONE);
+				ut.setText(String.valueOf(0));
+			}
 		}
 		setView(view);
 		// Log.i("AuroMarketpreference", "the OncreateView");
@@ -72,13 +72,15 @@ public class AuroraMarketPreference extends AuroraPreference {
 			return;
 		}
 		TextView ut = (TextView) v.findViewById(R.id.message);
-
-		if (sum > 0) {
-			ut.setVisibility(View.VISIBLE);
-			ut.setText(String.valueOf(sum));
-		} else {
-			ut.setVisibility(View.GONE);
-			ut.setText(String.valueOf(0));
+		if(ut!=null){
+			if (sum > 0) {
+				ut.setVisibility(View.VISIBLE);
+				ut.setText(String.valueOf(sum));
+			} else {
+				ut.setVisibility(View.GONE);
+				ut.setText(String.valueOf(0));
+			}
 		}
+
 	}
 }

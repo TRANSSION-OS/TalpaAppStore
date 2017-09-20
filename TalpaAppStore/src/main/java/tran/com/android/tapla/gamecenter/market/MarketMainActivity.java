@@ -48,9 +48,20 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 
+import java.io.File;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import tran.com.android.gc.lib.app.AuroraActivity;
+import tran.com.android.gc.lib.app.AuroraActivity.OnSearchViewQuitListener;
+import tran.com.android.gc.lib.widget.AuroraActionBar;
+import tran.com.android.gc.lib.widget.AuroraCustomActionBar;
+import tran.com.android.gc.lib.widget.AuroraCustomActionBar.onSearchViewClickedListener;
+import tran.com.android.gc.lib.widget.AuroraListView;
 import tran.com.android.talpa.app_core.http.RetrofitHelper;
 import tran.com.android.tapla.gamecenter.R;
 import tran.com.android.tapla.gamecenter.datauiapi.ManagerThread;
@@ -69,7 +80,7 @@ import tran.com.android.tapla.gamecenter.market.activity.module.AppRankingActivi
 import tran.com.android.tapla.gamecenter.market.activity.module.CategoryActivity;
 import tran.com.android.tapla.gamecenter.market.activity.module.MarketDetailActivity;
 import tran.com.android.tapla.gamecenter.market.activity.module.SpecialActivity;
-import tran.com.android.tapla.gamecenter.market.activity.setting.MarketManagerPreferenceActivity;
+import tran.com.android.tapla.gamecenter.market.activity.setting.MarketManagerActivity;
 import tran.com.android.tapla.gamecenter.market.adapter.AppAdapter;
 import tran.com.android.tapla.gamecenter.market.db.CacheDataAdapter;
 import tran.com.android.tapla.gamecenter.market.download.DownloadUpdateListener;
@@ -87,18 +98,6 @@ import tran.com.android.tapla.gamecenter.market.util.SearchUtils;
 import tran.com.android.tapla.gamecenter.market.util.SystemUtils;
 import tran.com.android.tapla.gamecenter.market.widget.FrameBannerView;
 import tran.com.android.tapla.gamecenter.market.widget.MainTabView;
-
-import java.io.File;
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.List;
-
-import tran.com.android.gc.lib.app.AuroraActivity;
-import tran.com.android.gc.lib.app.AuroraActivity.OnSearchViewQuitListener;
-import tran.com.android.gc.lib.widget.AuroraActionBar;
-import tran.com.android.gc.lib.widget.AuroraCustomActionBar;
-import tran.com.android.gc.lib.widget.AuroraCustomActionBar.onSearchViewClickedListener;
-import tran.com.android.gc.lib.widget.AuroraListView;
 import tran.com.android.tapla.gamecenter.net.GameNetInterface;
 
 public class MarketMainActivity extends BaseActivity implements
@@ -781,8 +780,9 @@ public class MarketMainActivity extends BaseActivity implements
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
-					Intent intent = new Intent(MarketMainActivity.this,
-							MarketManagerPreferenceActivity.class);
+//					Intent intent = new Intent(MarketMainActivity.this,
+//							MarketManagerPreferenceActivity.class);
+					Intent intent=new Intent(MarketMainActivity.this,MarketManagerActivity.class);
 					startActivity(intent);
 				}
 			});

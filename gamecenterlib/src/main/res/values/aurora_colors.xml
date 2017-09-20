@@ -129,6 +129,9 @@
     <!-- aurora <rocktong> 2014.12.11 add notification end -->
     
     
-    
+    <!--rjz add -->
+    <color name="aurora_preference_bg">#fafafa</color>
+    <color name="aurora_setting_line_color">#E5E5E5</color>
+    <color name="aurora_setting_margin_color">#fafafa</color>
 </resources>
 

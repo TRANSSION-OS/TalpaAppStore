@@ -1,13 +1,5 @@
 package tran.com.android.tapla.gamecenter.market.activity.setting;
 
-import tran.com.android.tapla.gamecenter.R;
-import tran.com.android.tapla.gamecenter.market.activity.BasePreferenceActivity;
-import tran.com.android.tapla.gamecenter.market.download.FileDownloader;
-import tran.com.android.tapla.gamecenter.market.service.AppDownloadService;
-import tran.com.android.tapla.gamecenter.market.util.Globals;
-import tran.com.android.tapla.gamecenter.market.util.SystemUtils;
-import tran.com.android.tapla.gamecenter.market.widget.AuroraMarketPreference;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +11,12 @@ import tran.com.android.gc.lib.preference.AuroraPreference;
 import tran.com.android.gc.lib.preference.AuroraPreferenceScreen;
 import tran.com.android.gc.lib.preference.AuroraSwitchPreference;
 import tran.com.android.gc.lib.widget.AuroraActionBar;
+import tran.com.android.tapla.gamecenter.R;
+import tran.com.android.tapla.gamecenter.market.activity.BasePreferenceActivity;
+import tran.com.android.tapla.gamecenter.market.download.FileDownloader;
+import tran.com.android.tapla.gamecenter.market.service.AppDownloadService;
+import tran.com.android.tapla.gamecenter.market.util.SystemUtils;
+import tran.com.android.tapla.gamecenter.market.widget.AuroraMarketPreference;
 
 public class MarketSettingsPreferenceActivity extends BasePreferenceActivity {
 
@@ -26,7 +24,7 @@ public class MarketSettingsPreferenceActivity extends BasePreferenceActivity {
 	public final static String WIFI_DOWNLOAD_KEY = "wifi_download_key";
 	public final static String NONE_DOWNLOAD_KEY = "none_download_pic_key";
 	public final static String IS_SHOW_DOWNLOAD_PIC_KEY = "is_show_download_pic_key";
-	private final static String HOLD_APP_KEY = "hold_app_key";
+	public final static String HOLD_APP_KEY = "hold_app_key";
 	
 	private AuroraActionBar mActionBar;
 	private static final int AURORA_NEW_MARKET = 0;

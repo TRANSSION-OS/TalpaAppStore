@@ -175,7 +175,12 @@
             android:screenOrientation="nosensor"
             android:theme="@style/AppMarketTheme"
             android:windowSoftInputMode="adjustPan"></activity>
-
+        <!--管理页面-->
+        <activity android:name=".market.activity.setting.MarketManagerActivity"></activity>
+        <!--设置界面-->
+        <activity android:name=".market.activity.setting.MarketSettingsActivity"></activity>
+        <!--更新设置界面-->
+        <activity android:name=".market.activity.setting.MarketUpdateSettingsActivity"></activity>
         <!-- 下载服务 -->
         <service android:name="tran.com.android.tapla.gamecenter.market.service.AppDownloadService"></service>
         <!-- 安装服务 -->

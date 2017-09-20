@@ -17,5 +17,6 @@
      <color name="aurora_action_bottom_bar_title_enable_color">#535353</color>
      
      <color name="aurora_text_view_link_color">#ff3578d3</color>
-     
+     <!--setting text color-->
+    <color name="aurora_setting_text_color">#505050</color>
 </resources>

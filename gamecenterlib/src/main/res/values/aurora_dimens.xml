@@ -30,8 +30,13 @@
     <dimen name="aurora_preference_fragment_padding_bottom">4dp</dimen>
     <dimen name="aurora_preference_title_padding">4dp</dimen>
     <dimen name="aurora_preference_category_title_padding_bottom">10dp</dimen>
-    <dimen name="aurora_preference_single_line_height">43dp</dimen>	
+    <dimen name="aurora_preference_single_line_height">64dp</dimen>
     <dimen name="aurora_preference_icon_size">19dp</dimen>
+    <!--rjz add start-->
+    <dimen name="manager_item_padding_start">20dp</dimen>
+    <dimen name="manager_item_title_padding_start">12dip</dimen>
+    <dimen name="aurora_setting_margin">16dp</dimen>
+    <!--rjz add end-->
     <!-- toast default offset y -->
     <dimen name="aurora_toast_y_offset">60dip</dimen>
     <!-- aurora_action_bar_title_text_size -->
@@ -254,4 +259,10 @@
     <dimen name="aurora_notification_large_icon_width">66dp</dimen>
     <dimen name="aurora_notification_time_size">13dp</dimen>
 	<!-- aurora <rocktong> 2014.12.11 add notification end -->
+    <!--aurora setting text -->
+    <dimen name="aurora_setting_size">16sp</dimen>
+    <dimen name="aurora_setting_margin_start">20dp</dimen>
+    <!--aurora manager text -->
+    <dimen name="aurora_manager_size">16sp</dimen>
+    <dimen name="aurora_manager_margin_start">12dp</dimen>
 </resources>

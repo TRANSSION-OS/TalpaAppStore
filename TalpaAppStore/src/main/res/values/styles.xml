@@ -74,6 +74,7 @@
     <style name="AppActionTheme" parent="style/Theme.aurora.Light">
         <item name="auroraActionBarTitleColor">@android:color/white</item>
         <item name="homeIcon">@drawable/aurora_action_bar_back_dark</item>
+        <item name="android:switchStyle">@style/TalpaOssdk.Widget.CompoundButton.Switch</item>
     </style>
 
     <style name="AppSearchTheme" parent="style/Theme.aurora.Light">
