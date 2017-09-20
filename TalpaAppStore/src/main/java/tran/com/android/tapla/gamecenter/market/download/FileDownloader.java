@@ -102,8 +102,6 @@ public class FileDownloader implements Runnable {
 		this.downloadData = downloadData;
 		this.listener = listener;
 		downloadUrl = downloadData.getApkDownloadPath();
-
-		Log.d("chehongbin","download url: "+downloadUrl);
 		String down_type= "";
 		if (type == TYPE_NORMAL)
 		{
@@ -246,9 +244,9 @@ public class FileDownloader implements Runnable {
 			url = new URL(downloadUrl);
 			Log.i(TAG, "zhangwei the downloadUrl= " + downloadUrl);
 			http = (HttpURLConnection) url.openConnection();
-			http.setConnectTimeout(8 * 1000);
+			http.setConnectTimeout(30 * 1000);
 //			http.setDoOutput(true);
-			http.setRequestMethod("POST");
+			http.setRequestMethod("GET");
 			http.setRequestProperty("Range", "bytes=" + downloadSize + "-" + (fileSize-1));
 			http.connect();
 			int code = http.getResponseCode();
@@ -395,8 +393,8 @@ public class FileDownloader implements Runnable {
 		try {
 			url = new URL(downloadUrl);
 			http = (HttpURLConnection) url.openConnection();
-			http.setConnectTimeout(8 * 1000);
-			http.setRequestMethod("POST");
+			http.setConnectTimeout(30 * 1000);
+			http.setRequestMethod("GET");
 			http.connect();
 			int code = http.getResponseCode();
 			

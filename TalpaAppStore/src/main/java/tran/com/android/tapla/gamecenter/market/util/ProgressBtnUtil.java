@@ -303,7 +303,7 @@ public class ProgressBtnUtil {
 		};
 		
 		// ProgressBtn
-		progressBtn.setBtnText(progressBtn.getResources().getString(R.string.donwloadman_download));
+		progressBtn.setBtnText(progressBtn.getResources().getString(R.string.download_button_download));
 		progressBtn.setStatus(ProgressBtn.STATUS_NORMAL);
 		progressBtn.setOnNormalClickListener(clickListener);
 		final int apkId = downloadData.getApkId();
@@ -340,7 +340,7 @@ public class ProgressBtnUtil {
 		};
 		
 		// ProgressBtn
-		progressBtn.setBtnText(progressBtn.getResources().getString(R.string.donwloadman_update));
+		progressBtn.setBtnText(progressBtn.getResources().getString(R.string.download_button_update));
 		progressBtn.setStatus(ProgressBtn.STATUS_NORMAL);
 		progressBtn.setOnNormalClickListener(clickListener);
 		/*if (onClickListener != null) {
@@ -467,7 +467,7 @@ public class ProgressBtnUtil {
 		if (fileSize != 0) {
 			progress = (int) ((downloadSize * 1.0) / fileSize * 100);
 		}
-		progressBtn.setStatus(ProgressBtn.STATUS_PROGRESSING_DOWNLOAD);
+		progressBtn.setStatus(ProgressBtn.STAUTS_DOWNLOAD_CONTINUE);
 		progressBtn.setProgress(progress);
 		progressBtn.setOnProgressClickListener(clickListener);
 		progressBtn.setProgressBackground(R.drawable.button_goon_selector);
@@ -498,8 +498,7 @@ public class ProgressBtnUtil {
 							}).create();
 			mWifiConDialog.show();
 		} else {
-			AppDownloadService.pauseOrContinueDownload(progressBtn.getContext(),
-					downloader.getDownloadData());
+			AppDownloadService.pauseOrContinueDownload(progressBtn.getContext(),downloader.getDownloadData());
 		}
 	}
 	
@@ -532,7 +531,7 @@ public class ProgressBtnUtil {
 		if (fileSize != 0) {
 			progress = (int) ((downloadSize * 1.0) / fileSize * 100);
 		}
-		progressBtn.setStatus(ProgressBtn.STATUS_PROGRESSING_DOWNLOAD);
+		progressBtn.setStatus(ProgressBtn.STATUS_DOWNLOAD_FAIL);
 		progressBtn.setProgress(progress);
 		progressBtn.setOnProgressClickListener(clickListener);
 		progressBtn.setProgressBackground(R.drawable.button_goon_selector);
@@ -580,7 +579,7 @@ public class ProgressBtnUtil {
 		};
 		
 		// ProgressBtn
-		progressBtn.setFoucesBtnText(progressBtn.getResources().getString(R.string.downloadman_install));
+		progressBtn.setFoucesBtnText(progressBtn.getResources().getString(R.string.download_button_install));
 		progressBtn.setFouceNormalStyle();
 		int id =  progressBtn.getTag() == null ? 0 : (Integer) progressBtn.getTag();
 		if (id == downloadData.getApkId()) {
@@ -641,7 +640,7 @@ public class ProgressBtnUtil {
 		};
 		
 		// ProgressBtn
-		progressBtn.setFoucesBtnText(progressBtn.getResources().getString(R.string.downloadman_open));
+		progressBtn.setBtnText(progressBtn.getResources().getString(R.string.download_button_open));
 		progressBtn.setFouceStyle();
 		int id =  progressBtn.getTag() == null ? 0 : (Integer) progressBtn.getTag();
 		if (id == downloadData.getApkId()) {

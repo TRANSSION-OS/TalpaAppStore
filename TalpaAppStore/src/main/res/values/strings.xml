@@ -278,4 +278,15 @@
     <string name="single_dialog_message">Sure you want to delete?</string>
     <string name="single_check_content">Do not ask again</string>
     <!-- 系统弹出弹出框调试  by jiechen -->
+    <!--Download Button-->
+    <string name="download_button_download">Download</string>
+    <string name="download_button_wait">Wait</string>
+    <string name="download_button_update">Update</string>
+    <string name="download_button_open">Open</string>
+    <string name="download_button_installing">Installing</string>
+    <string name="download_button_install">Install</string>
+    <string name="download_button_continue">Go on</string>
+    <string name="download_button_try">Retry</string>
+    <string name="download_button_download_percent">%</string>
+    <!--Download Button-->
 </resources>

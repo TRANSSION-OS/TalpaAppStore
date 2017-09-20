@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--下载按钮默认样式-->
+    <style name="Download_Btn_Text_DF">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF535D</item>
+    </style>
+
+</resources>
