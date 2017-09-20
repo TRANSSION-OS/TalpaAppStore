@@ -28,8 +28,8 @@
         android:id="@+id/aurora_searchview_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_vertical">
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
 
         <!-- This is actually used for the badge icon *or* the badge label (or neither) -->
 
@@ -109,18 +109,18 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:minWidth="@dimen/aurora_search_view_text_min_width" >
+                        android:minWidth="@dimen/aurora_search_view_text_min_width">
 
                         <view
                             android:id="@+id/aurora_search_src_text"
+                            class="tran.com.android.gc.lib.widget.AuroraSearchView$SearchAutoComplete"
                             android:layout_width="wrap_content"
                             android:layout_height="@dimen/aurora_search_view_hight"
                             android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
                             android:layout_marginRight="30dp"
                             android:layout_marginTop="0.3dp"
-                            android:layout_marginLeft="10dp"
                             android:layout_weight="1"
-                            class="tran.com.android.gc.lib.widget.AuroraSearchView$SearchAutoComplete"
                             android:background="@null"
                             android:dropDownAnchor="@id/aurora_search_edit_frame"
                             android:dropDownHeight="wrap_content"
@@ -143,10 +143,10 @@
                             android:layout_marginLeft="9dp"
                             android:gravity="center_vertical"
                             android:paddingBottom="0.3dp"
+                            android:paddingLeft="8dp"
+                            android:text="Wechat"
                             android:textColor="#cacaca"
-                            android:textSize="16sp"
-                            android:paddingLeft="16dp"
-                            android:text="Wechat"/>
+                            android:textSize="16sp" />
                     </FrameLayout>
                 </LinearLayout>
                  <ImageView
@@ -167,8 +167,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
                     android:paddingLeft="4dip"
-                    android:paddingRight="10dip"
-                    android:src="@drawable/vector_drawable_search_icon" />
+                    android:paddingRight="16dip"
+                    android:src="@drawable/vector_drawable_search_icon_dark" />
 
                     <ImageView
                         android:id="@+id/aurora_search_voice_btn"

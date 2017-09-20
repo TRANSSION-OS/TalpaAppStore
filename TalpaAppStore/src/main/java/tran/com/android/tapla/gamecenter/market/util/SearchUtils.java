@@ -294,7 +294,7 @@ public class SearchUtils {
 		//mActivity.setSearchViewAnimDuration(250);
 		mSearchView.setTextColor(Color.parseColor("#505050"));
 		mSearchView.setSearchViewBorder(R.drawable.search_bar_bg_talpa);
-		mSearchView.setSearchIconDrawable(R.drawable.vector_drawable_search_icon);
+        mSearchView.setSearchIconDrawable(R.drawable.aurora_search_view);
 		mSearchView.setDeleteButtonDrawable(R.drawable.searchcancel);
 
 
